@@ -1,0 +1,142 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Hear and understand the difference between what you hear and what someone with audio hypersensitivity hears.",
+          "examplePhrases": [
+            "Alexa open hyper sensitivity",
+            "Alexa ask hyper sensitivity to start simulation"
+          ],
+          "keywords": [
+            "autism",
+            "fragile",
+            "x",
+            "fragile",
+            "x",
+            "syndrome",
+            "williams",
+            "syndrome",
+            "williams",
+            "audio",
+            "hypersensitivity",
+            "hypersensitivity",
+            "hyper",
+            "sensitivity"
+          ],
+          "name": "Hypersensitivity to Audio Simulation",
+          "description": "While a typical individual is able to \"tune out\" sounds that aren\u0027t important to them, for individuals with hypersensitivity to audio, which is common in disorders such as autism, Fragile X syndrome, and Williams syndrome, they hear all of the sounds around them at the same volume and intensity. This simulation seeks to help you understand and sympathize with others. Listen, learn, and understand.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "en-US",
+            "language": "en"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "The skill has onscreen information in addition to audio files. It plays the simulation without any additional information from the user after opening it.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:798270348184:function:34670183-7aba-4c5c-ad9d-0e9f8e984a8c:Release_0"
+        },
+        "interfaces": [
+          {
+            "supportedViewports": [
+              {
+                "minHeight": 480,
+                "mode": "HUB",
+                "shape": "ROUND",
+                "maxHeight": 480,
+                "minWidth": 480,
+                "maxWidth": 480
+              },
+              {
+                "minHeight": 600,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 600,
+                "minWidth": 1024,
+                "maxWidth": 1024
+              },
+              {
+                "minHeight": 800,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 800,
+                "minWidth": 1280,
+                "maxWidth": 1280
+              },
+              {
+                "minHeight": 540,
+                "mode": "TV",
+                "shape": "RECTANGLE",
+                "maxHeight": 540,
+                "minWidth": 960,
+                "maxWidth": 960
+              },
+              {
+                "minHeight": 480,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 480,
+                "minWidth": 960,
+                "maxWidth": 960
+              }
+            ],
+            "type": "ALEXA_PRESENTATION_APL"
+          },
+          {
+            "minimumTemplateVersion": "1.0",
+            "type": "RENDER_TEMPLATE"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:798270348184:function:34670183-7aba-4c5c-ad9d-0e9f8e984a8c:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:798270348184:function:34670183-7aba-4c5c-ad9d-0e9f8e984a8c:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:798270348184:function:34670183-7aba-4c5c-ad9d-0e9f8e984a8c:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "",
+          "privacyPolicyUrl": "https://fragilex.org/privacy-policy"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
